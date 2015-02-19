@@ -1,0 +1,267 @@
+<html>
+
+<head>
+<title>Add New Vehicle</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all" />
+<link rel="stylesheet" type="text/css" href="./Styles/buttonstyle.css" />
+<link rel="stylesheet" type="text/css" href="./Styles/textboxstyle.css" />
+<script type="text/javascript" src="view.js"></script>
+<script type="text/javascript" src="function.js"></script>
+
+<link rel="stylesheet" href="dependencies/bootstrap-3.2.0/css/bootstrap.min.css"> <!--for bootstrap theme-->    
+<script src="dependencies/jquery/jquery-1.11.1.min.js"></script>        
+<script src="dependencies/bootstrap-3.2.0/js/bootstrap.min.js"></script><!--for bootstrap theme-->    
+<script src="dependencies/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
+<script src="jquery-picture-cut-master/src/jquery.picture.cut.js"></script>
+<script src="codin.js"></script> 
+
+		<link rel="stylesheet" type="text/css" href="css/normaltextboxstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/schemestyle.css">
+        <link rel="stylesheet" type="text/css" href="css/buttonstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/hyperlinkstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/paragraphstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/dualpanestyle.css">
+        <link rel="stylesheet" type="text/css" href="css/ratingstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/tooltipstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/slidingpanelstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/combostyle.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://tympanus.net/codrops/adpacks/demoad.js"></script>
+        <script src="./js/driverhome.js"></script> 
+        
+        <div style=" height: 10px; text-align: right;">
+        <div style=" width: 310px; height: 40px; text-align: left; float: left;">
+            <img src="logo1.png" alt="" style="text-align: left; height: 40px"/>
+        </div>
+        <div style=" height: 40px; text-align: right; float: right;">
+            <a href="#" style=" margin-top: 30px; line-height: 40px;">FAQ</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" >About us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" >Sign out</a>&nbsp;&nbsp;
+            <!--<input type="submit" value="Sign out" class="belize-hole-flat-button">-->
+                     
+        </div>
+                <div style=" width: 1310px; height: 30px; text-align: right; float: right; line-height: 30px; float: left">   
+                    You are logged in as <text>Driver&nbsp;</text>
+                    <!--<a href="#">| Sign out |</a>-->
+                    
+                </div>
+
+    </div>
+        
+
+</head>
+
+<body id="main_body">
+
+
+
+
+<div id="form_container">
+<img id="top" src="top.png" alt=""/>
+<h1><a> Add New Vehicle </a></h1>
+<form id="form_970050" class="appnitro" enctype="multipart/form-data" method="post" action="">
+	<div class="form_description">
+	<h2><a><center> Add New Vehicle </center></a></h2>
+	</div>
+	
+	<div id="container_image"></div> 
+	 
+
+<ul>
+	<li id="li_15"><label class="description" for="element_15">Reg.	No </label>
+	<div><input id="element_15" name="element_15" class="element text medium" type="text" maxlength="255" value="" /></div>
+	</li>
+	
+	<li id="li_17"><label class="description" for="element_17">Type	</label>
+	<div><select class="element select medium" id="element_17" name="element_17">
+		<option value="" selected="selected"></option>
+		<option value="1">First option</option>
+		<option value="2">Second option</option>
+		<option value="3">Third option</option>
+	</select></div>	
+	</li>
+	
+	<li id="li_18"><label class="description" for="element_18">Manufacturer	</label>
+	<div><select class="element select medium" id="element_18" name="element_18">
+		<option value="" selected="selected"></option>
+		<option value="1">First option</option>
+		<option value="2">Second option</option>
+		<option value="3">Third option</option>
+	</select></div>
+	</li>
+	
+	<li id="li_19"><label class="description" for="element_19">Model</label>
+	<div><select class="element select medium" id="element_19" name="element_19">
+		<option value="" selected="selected"></option>
+		<option value="1">First option</option>
+		<option value="2">Second option</option>
+		<option value="3">Third option</option>
+	</select></div>
+	</li>
+	
+	<li id="li_1"><label class="description" for="element_1">Capacity</label>
+	<div><input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value="" />
+	</div>
+	</li>
+	
+	<li id="li_16"><label class="description" for="element_16">Upload images </label>
+	<div><input id="element_16" name="element_16" class="element file" type="file" /></div>
+	</li>
+	
+	<li class="section_break"> 
+	<h3><b>
+	<center>Pricing Scheme and Availability</center>
+	</b></h3>
+	<p><center>Please specify your pricing schemes for each selected category</center></p>
+	</li>
+	
+	<li>
+	<span>
+		<input id="Checkbox1" name="element_20_1" type="checkbox"  onclick="showHide()"/> 
+		<label class="choice" for="element_20_1"><b>City Taxi Service</b></label> 
+	</span>
+	</li>	
+</ul>	
+
+    <div id="delivery" style="display:none; background-color: beige; padding: 10px; border: 1px dashed #999"/>
+    	<h3><b>Pricing Scheme</b></h3>
+    	<span> <input id="element_26_1" name="element_26_1" class="element checkbox" type="checkbox" value="1" />
+    	<label class="choice" for="element_26_1">Price with AC</label> </span><br>
+    	Rs:
+    	<span>
+    	<input id="pricewithac" type="text" maxlength="255" value="" ></input>
+    	</span>
+    	per   	
+    	<span>
+            <select name="example">
+                <option value=".03">3/12 Pitch</option>
+                <option value=".05">4/12 Pitch</option>                
+            </select>
+        </span>	  
+        
+        <span> <input id="element_26_1" name="element_26_1" class="element checkbox" type="checkbox" value="1" />
+    	<label class="choice" for="element_26_1">Price without AC</label> </span><br>
+    	Rs:
+    	<span>
+    	<input id="pricewithac" type="text" maxlength="255" value="" ></input>
+    	</span>
+    	per   	
+    	<span>
+            <select name="example">
+                <option value=".03">3/12 Pitch</option>
+                <option value=".05">4/12 Pitch</option>                
+            </select>
+        </span>	  
+        
+        <span> <input id="element_26_1" name="element_26_1" class="element checkbox" type="checkbox" value="1" />
+    	<label class="choice" for="element_26_1">Luggage Charges</label> </span><br>
+    	Rs:
+    	<span>
+    	<input id="pricewithac" type="text" maxlength="255" value="" ></input>
+    	</span>
+    	per   	
+    	<span>
+            <select name="example">
+                <option value=".03">3/12 Pitch</option>
+                <option value=".05">4/12 Pitch</option>                
+            </select>
+        </span>	  
+        
+        <span> <input id="element_26_1" name="element_26_1" class="element checkbox" type="checkbox" value="1" />
+    	<label class="choice" for="element_26_1">Waiting Charges</label> </span><br>
+    	Rs:
+    	<span>
+    	<input id="pricewithac" type="text" maxlength="255" value="" ></input>
+    	</span>
+    	per   	
+    	<span>
+            <select name="example">
+                <option value=".03">3/12 Pitch</option>
+                <option value=".05">4/12 Pitch</option>                
+            </select>
+        </span>		
+    		
+	<ul>
+	<li class="section_break">
+	<h3><b>Availability</b></h3>
+	</li>
+	</ul>
+	
+	<ul>
+	<li id="li_26">
+	<span> <input id="element_26_1" name="element_26_1" class="element checkbox" type="checkbox" value="1" />
+	<label class="choice" for="element_26_1">Monday From</label>
+	</span>
+	<span>
+    	<input id="pricewithac" type="text" maxlength="255" value="" ></input>
+    </span>
+	</li>
+	
+	<li id="li_26">
+	<span> <input id="element_26_1" name="element_26_1" class="element checkbox" type="checkbox" value="1" />
+	<label class="choice" for="element_26_1">Tuesday From</label>
+	</span>
+	<span>
+    	<input id="pricewithac" type="text" maxlength="255" value="" ></input>
+    </span>
+	</li>
+	
+	<li id="li_26">
+	<span> <input id="element_26_1" name="element_26_1" class="element checkbox" type="checkbox" value="1" />
+	<label class="choice" for="element_26_1">Wednesday From</label>
+	</span>
+	<span>
+    	<input id="pricewithac" type="text" maxlength="255" value="" ></input>
+    </span>
+	</li>
+	
+	<li id="li_26">
+	<span> <input id="element_26_1" name="element_26_1" class="element checkbox" type="checkbox" value="1" />
+	<label class="choice" for="element_26_1">Thursday From</label>
+	</span>
+	<span>
+    	<input id="pricewithac" type="text" maxlength="255" value="" ></input>
+    </span>
+	</li>
+	
+	<li id="li_26">
+	<span> <input id="element_26_1" name="element_26_1" class="element checkbox" type="checkbox" value="1" />
+	<label class="choice" for="element_26_1">Friday From</label>
+	</span>
+	<span>
+    	<input id="pricewithac" type="text" maxlength="255" value="" ></input>
+    </span>
+	</li>
+	
+	<li id="li_26">
+	<span> <input id="element_26_1" name="element_26_1" class="element checkbox" type="checkbox" value="1" />
+	<label class="choice" for="element_26_1">Saturday From</label>
+	</span>
+	<span>
+    	<input id="pricewithac" type="text" maxlength="255" value="" ></input>
+    </span>
+	</li>
+	
+	<li id="li_26">
+	<span> <input id="element_26_1" name="element_26_1" class="element checkbox" type="checkbox" value="1" />
+	<label class="choice" for="element_26_1">Sunday From</label>
+	</span>
+	<span>
+    	<input id="pricewithac" type="text" maxlength="255" value="" ></input>
+    </span>
+	</li>
+	</ul>
+ </div> 
+ <br>	 
+	
+
+	<center><input id="saveForm" type="submit" name="submit" value="Register vehicle" class="belize-hole-flat-button" /></center>
+	
+</form>
+<div id="footer"></div>
+</div>
+<img id="bottom" src="bottom.png" alt="">
+
+</body>
+</html>
